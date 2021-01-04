@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB29CBD425A3400800A313C2 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29CBD325A3400800A313C2 /* Site.swift */; };
+		FB29CBDE25A3401800A313C2 /* SiteItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB29CBD925A3401800A313C2 /* SiteItem.xib */; };
+		FB29CBDF25A3401800A313C2 /* SiteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29CBDA25A3401800A313C2 /* SiteItem.swift */; };
+		FB29CBFF25A3428900A313C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB29CBFE25A3428900A313C2 /* Assets.xcassets */; };
+		FB29CC1025A3433200A313C2 /* WidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29CC0E25A3433200A313C2 /* WidgetViewController.swift */; };
+		FB29CC1125A3433200A313C2 /* WidgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB29CC0F25A3433200A313C2 /* WidgetViewController.xib */; };
+		FB29CC1F25A3438400A313C2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDB0D9325A1FABC00A67A73 /* NotificationCenter.framework */; };
+		FB4F682A25A1ADCE00C62191 /* Kanna in Frameworks */ = {isa = PBXBuildFile; productRef = FB4F682925A1ADCE00C62191 /* Kanna */; };
+		FB91C74E258A614A002729CA /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = FB91C74D258A614A002729CA /* Realm */; };
+		FB91C750258A614A002729CA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FB91C74F258A614A002729CA /* RealmSwift */; };
+		FB98F7F02587520C00B441D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98F7EF2587520C00B441D1 /* AppDelegate.swift */; };
+		FB98F7F22587520C00B441D1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98F7F12587520C00B441D1 /* MainViewController.swift */; };
+		FB98F7F42587521000B441D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB98F7F32587521000B441D1 /* Assets.xcassets */; };
+		FB98F7F72587521000B441D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB98F7F52587521000B441D1 /* Main.storyboard */; };
+		FB98F8032587521000B441D1 /* GlancesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98F8022587521000B441D1 /* GlancesTests.swift */; };
+		FB98F80E2587521000B441D1 /* GlancesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98F80D2587521000B441D1 /* GlancesUITests.swift */; };
+		FBF88950258DD7B50068627A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8894F258DD7B50068627A /* AddViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB29CC0425A3428900A313C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB98F7E42587520C00B441D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB29CBF425A3428600A313C2;
+			remoteInfo = GlancesWidgetExtension;
+		};
+		FB98F7FF2587521000B441D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB98F7E42587520C00B441D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB98F7EB2587520C00B441D1;
+			remoteInfo = glances;
+		};
+		FB98F80A2587521000B441D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB98F7E42587520C00B441D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB98F7EB2587520C00B441D1;
+			remoteInfo = glances;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FBB80028258FA93C0067D88A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FB29CBD325A3400800A313C2 /* Site.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
+		FB29CBD925A3401800A313C2 /* SiteItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SiteItem.xib; sourceTree = "<group>"; };
+		FB29CBDA25A3401800A313C2 /* SiteItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteItem.swift; sourceTree = "<group>"; };
+		FB29CBF525A3428600A313C2 /* GlancesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GlancesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB29CBFE25A3428900A313C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB29CC0025A3428900A313C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB29CC0125A3428900A313C2 /* GlancesWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GlancesWidget.entitlements; sourceTree = "<group>"; };
+		FB29CC0E25A3433200A313C2 /* WidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViewController.swift; sourceTree = "<group>"; };
+		FB29CC0F25A3433200A313C2 /* WidgetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WidgetViewController.xib; sourceTree = "<group>"; };
+		FB98F7EC2587520C00B441D1 /* Glances.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glances.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB98F7EF2587520C00B441D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB98F7F12587520C00B441D1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FB98F7F32587521000B441D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB98F7F62587521000B441D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB98F7F82587521000B441D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB98F7F92587521000B441D1 /* Glances.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Glances.entitlements; sourceTree = "<group>"; };
+		FB98F7FE2587521000B441D1 /* GlancesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlancesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB98F8022587521000B441D1 /* GlancesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlancesTests.swift; sourceTree = "<group>"; };
+		FB98F8042587521000B441D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB98F8092587521000B441D1 /* GlancesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlancesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB98F80D2587521000B441D1 /* GlancesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlancesUITests.swift; sourceTree = "<group>"; };
+		FB98F80F2587521000B441D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDB0D9325A1FABC00A67A73 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		FBF8894F258DD7B50068627A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB29CBF225A3428600A313C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB29CC1F25A3438400A313C2 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB98F7E92587520C00B441D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB91C750258A614A002729CA /* RealmSwift in Frameworks */,
+				FB4F682A25A1ADCE00C62191 /* Kanna in Frameworks */,
+				FB91C74E258A614A002729CA /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB98F7FB2587521000B441D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB98F8062587521000B441D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB29CBFA25A3428600A313C2 /* GlancesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FB29CC0F25A3433200A313C2 /* WidgetViewController.xib */,
+				FB29CC0E25A3433200A313C2 /* WidgetViewController.swift */,
+				FB29CBFE25A3428900A313C2 /* Assets.xcassets */,
+				FB29CC0125A3428900A313C2 /* GlancesWidget.entitlements */,
+				FB29CC0025A3428900A313C2 /* Info.plist */,
+			);
+			path = GlancesWidget;
+			sourceTree = "<group>";
+		};
+		FB4F683925A1DB1C00C62191 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB0D9325A1FABC00A67A73 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB98F7E32587520C00B441D1 = {
+			isa = PBXGroup;
+			children = (
+				FB98F7EE2587520C00B441D1 /* Glances */,
+				FB98F8012587521000B441D1 /* GlancesTests */,
+				FB98F80C2587521000B441D1 /* GlancesUITests */,
+				FB29CBFA25A3428600A313C2 /* GlancesWidget */,
+				FB4F683925A1DB1C00C62191 /* Frameworks */,
+				FB98F7ED2587520C00B441D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB98F7ED2587520C00B441D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB98F7EC2587520C00B441D1 /* Glances.app */,
+				FB98F7FE2587521000B441D1 /* GlancesTests.xctest */,
+				FB98F8092587521000B441D1 /* GlancesUITests.xctest */,
+				FB29CBF525A3428600A313C2 /* GlancesWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB98F7EE2587520C00B441D1 /* Glances */ = {
+			isa = PBXGroup;
+			children = (
+				FB98F8202587525300B441D1 /* model */,
+				FB98F81E2587523F00B441D1 /* view */,
+				FB98F81F2587524C00B441D1 /* controller */,
+				FB98F7EF2587520C00B441D1 /* AppDelegate.swift */,
+				FB98F7F32587521000B441D1 /* Assets.xcassets */,
+				FB98F7F92587521000B441D1 /* Glances.entitlements */,
+				FB98F7F82587521000B441D1 /* Info.plist */,
+			);
+			path = Glances;
+			sourceTree = "<group>";
+		};
+		FB98F8012587521000B441D1 /* GlancesTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB98F8022587521000B441D1 /* GlancesTests.swift */,
+				FB98F8042587521000B441D1 /* Info.plist */,
+			);
+			path = GlancesTests;
+			sourceTree = "<group>";
+		};
+		FB98F80C2587521000B441D1 /* GlancesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB98F80D2587521000B441D1 /* GlancesUITests.swift */,
+				FB98F80F2587521000B441D1 /* Info.plist */,
+			);
+			path = GlancesUITests;
+			sourceTree = "<group>";
+		};
+		FB98F81E2587523F00B441D1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FB98F7F52587521000B441D1 /* Main.storyboard */,
+				FB29CBDA25A3401800A313C2 /* SiteItem.swift */,
+				FB29CBD925A3401800A313C2 /* SiteItem.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FB98F81F2587524C00B441D1 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB98F7F12587520C00B441D1 /* MainViewController.swift */,
+				FBF8894F258DD7B50068627A /* AddViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		FB98F8202587525300B441D1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FB29CBD325A3400800A313C2 /* Site.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB29CBF425A3428600A313C2 /* GlancesWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB29CC0625A3428900A313C2 /* Build configuration list for PBXNativeTarget "GlancesWidgetExtension" */;
+			buildPhases = (
+				FB29CBF125A3428600A313C2 /* Sources */,
+				FB29CBF225A3428600A313C2 /* Frameworks */,
+				FB29CBF325A3428600A313C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlancesWidgetExtension;
+			productName = GlancesWidgetExtension;
+			productReference = FB29CBF525A3428600A313C2 /* GlancesWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FB98F7EB2587520C00B441D1 /* Glances */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB98F8122587521000B441D1 /* Build configuration list for PBXNativeTarget "Glances" */;
+			buildPhases = (
+				FB98F7E82587520C00B441D1 /* Sources */,
+				FB98F7E92587520C00B441D1 /* Frameworks */,
+				FB98F7EA2587520C00B441D1 /* Resources */,
+				FBB80028258FA93C0067D88A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB29CC0525A3428900A313C2 /* PBXTargetDependency */,
+			);
+			name = Glances;
+			packageProductDependencies = (
+				FB91C74D258A614A002729CA /* Realm */,
+				FB91C74F258A614A002729CA /* RealmSwift */,
+				FB4F682925A1ADCE00C62191 /* Kanna */,
+			);
+			productName = glances;
+			productReference = FB98F7EC2587520C00B441D1 /* Glances.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB98F7FD2587521000B441D1 /* GlancesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB98F8152587521000B441D1 /* Build configuration list for PBXNativeTarget "GlancesTests" */;
+			buildPhases = (
+				FB98F7FA2587521000B441D1 /* Sources */,
+				FB98F7FB2587521000B441D1 /* Frameworks */,
+				FB98F7FC2587521000B441D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB98F8002587521000B441D1 /* PBXTargetDependency */,
+			);
+			name = GlancesTests;
+			productName = glancesTests;
+			productReference = FB98F7FE2587521000B441D1 /* GlancesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB98F8082587521000B441D1 /* GlancesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB98F8182587521000B441D1 /* Build configuration list for PBXNativeTarget "GlancesUITests" */;
+			buildPhases = (
+				FB98F8052587521000B441D1 /* Sources */,
+				FB98F8062587521000B441D1 /* Frameworks */,
+				FB98F8072587521000B441D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB98F80B2587521000B441D1 /* PBXTargetDependency */,
+			);
+			name = GlancesUITests;
+			productName = glancesUITests;
+			productReference = FB98F8092587521000B441D1 /* GlancesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB98F7E42587520C00B441D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					FB29CBF425A3428600A313C2 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
+					FB98F7EB2587520C00B441D1 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					FB98F7FD2587521000B441D1 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = FB98F7EB2587520C00B441D1;
+					};
+					FB98F8082587521000B441D1 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = FB98F7EB2587520C00B441D1;
+					};
+				};
+			};
+			buildConfigurationList = FB98F7E72587520C00B441D1 /* Build configuration list for PBXProject "Glances" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB98F7E32587520C00B441D1;
+			packageReferences = (
+				FB91C74C258A614A002729CA /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				FB4F682825A1ADCE00C62191 /* XCRemoteSwiftPackageReference "Kanna" */,
+			);
+			productRefGroup = FB98F7ED2587520C00B441D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB98F7EB2587520C00B441D1 /* Glances */,
+				FB98F7FD2587521000B441D1 /* GlancesTests */,
+				FB98F8082587521000B441D1 /* GlancesUITests */,
+				FB29CBF425A3428600A313C2 /* GlancesWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB29CBF325A3428600A313C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB29CC1125A3433200A313C2 /* WidgetViewController.xib in Resources */,
+				FB29CBFF25A3428900A313C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB98F7EA2587520C00B441D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB29CBDE25A3401800A313C2 /* SiteItem.xib in Resources */,
+				FB98F7F42587521000B441D1 /* Assets.xcassets in Resources */,
+				FB98F7F72587521000B441D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB98F7FC2587521000B441D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB98F8072587521000B441D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB29CBF125A3428600A313C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB29CC1025A3433200A313C2 /* WidgetViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB98F7E82587520C00B441D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB29CBDF25A3401800A313C2 /* SiteItem.swift in Sources */,
+				FBF88950258DD7B50068627A /* AddViewController.swift in Sources */,
+				FB29CBD425A3400800A313C2 /* Site.swift in Sources */,
+				FB98F7F22587520C00B441D1 /* MainViewController.swift in Sources */,
+				FB98F7F02587520C00B441D1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB98F7FA2587521000B441D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB98F8032587521000B441D1 /* GlancesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB98F8052587521000B441D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB98F80E2587521000B441D1 /* GlancesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB29CC0525A3428900A313C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB29CBF425A3428600A313C2 /* GlancesWidgetExtension */;
+			targetProxy = FB29CC0425A3428900A313C2 /* PBXContainerItemProxy */;
+		};
+		FB98F8002587521000B441D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB98F7EB2587520C00B441D1 /* Glances */;
+			targetProxy = FB98F7FF2587521000B441D1 /* PBXContainerItemProxy */;
+		};
+		FB98F80B2587521000B441D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB98F7EB2587520C00B441D1 /* Glances */;
+			targetProxy = FB98F80A2587521000B441D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB98F7F52587521000B441D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB98F7F62587521000B441D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB29CC0725A3428900A313C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GlancesWidget/GlancesWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 725VD6N5A5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = GlancesWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roomedia.glances.GlancesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FB29CC0825A3428900A313C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GlancesWidget/GlancesWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 725VD6N5A5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = GlancesWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roomedia.glances.GlancesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FB98F8102587521000B441D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB98F8112587521000B441D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FB98F8132587521000B441D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = glances/glances.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 725VD6N5A5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = glances/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roomedia.glances;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FB98F8142587521000B441D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = glances/glances.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 725VD6N5A5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = NO;
+				INFOPLIST_FILE = glances/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roomedia.glances;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FB98F8162587521000B441D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 725VD6N5A5;
+				INFOPLIST_FILE = glancesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roomedia.glancesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glances.app/Contents/MacOS/Glances";
+			};
+			name = Debug;
+		};
+		FB98F8172587521000B441D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 725VD6N5A5;
+				INFOPLIST_FILE = glancesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roomedia.glancesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glances.app/Contents/MacOS/Glances";
+			};
+			name = Release;
+		};
+		FB98F8192587521000B441D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 725VD6N5A5;
+				INFOPLIST_FILE = glancesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roomedia.glancesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = glances;
+			};
+			name = Debug;
+		};
+		FB98F81A2587521000B441D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 725VD6N5A5;
+				INFOPLIST_FILE = glancesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roomedia.glancesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = glances;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB29CC0625A3428900A313C2 /* Build configuration list for PBXNativeTarget "GlancesWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB29CC0725A3428900A313C2 /* Debug */,
+				FB29CC0825A3428900A313C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB98F7E72587520C00B441D1 /* Build configuration list for PBXProject "Glances" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB98F8102587521000B441D1 /* Debug */,
+				FB98F8112587521000B441D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB98F8122587521000B441D1 /* Build configuration list for PBXNativeTarget "Glances" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB98F8132587521000B441D1 /* Debug */,
+				FB98F8142587521000B441D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB98F8152587521000B441D1 /* Build configuration list for PBXNativeTarget "GlancesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB98F8162587521000B441D1 /* Debug */,
+				FB98F8172587521000B441D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB98F8182587521000B441D1 /* Build configuration list for PBXNativeTarget "GlancesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB98F8192587521000B441D1 /* Debug */,
+				FB98F81A2587521000B441D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB4F682825A1ADCE00C62191 /* XCRemoteSwiftPackageReference "Kanna" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tid-kijyun/Kanna";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.4;
+			};
+		};
+		FB91C74C258A614A002729CA /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB4F682925A1ADCE00C62191 /* Kanna */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB4F682825A1ADCE00C62191 /* XCRemoteSwiftPackageReference "Kanna" */;
+			productName = Kanna;
+		};
+		FB91C74D258A614A002729CA /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB91C74C258A614A002729CA /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		FB91C74F258A614A002729CA /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB91C74C258A614A002729CA /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FB98F7E42587520C00B441D1 /* Project object */;
+}

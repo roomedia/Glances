@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SiteItem" customModule="Glances" customModuleProvider="target">
+            <connections>
+                <outlet property="name" destination="rTN-Of-3kV" id="6Z6-sk-l2n"/>
+                <outlet property="preview" destination="hEh-i1-qgN" id="DNk-XD-r2L"/>
+                <outlet property="url" destination="gIF-7b-GPx" id="q06-eE-dCg"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="xpath" destination="bOc-43-zPV" id="8ZH-Ae-tZx"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box fixedFrame="YES" boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="hbH-Wa-1Ya">
+                    <rect key="frame" x="0.0" y="0.0" width="460" height="66"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" id="znM-V6-Abt">
+                        <rect key="frame" x="1" y="1" width="458" height="64"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField toolTip="Blog Name" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rTN-Of-3kV">
+                                <rect key="frame" x="18" y="33" width="83" height="19"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Site Name" id="whM-pa-Kl3">
+                                    <font key="font" metaFont="system" size="17"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="pEy-MQ-6Es">
+                                <rect key="frame" x="104" y="33" width="5" height="19"/>
+                            </box>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="gIF-7b-GPx">
+                                <rect key="frame" x="18" y="15" width="141" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="www.example.url.com/" id="e38-7c-nnn">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bOc-43-zPV">
+                                <rect key="frame" x="402" y="15" width="38" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="xpath" id="sod-xc-Z5a">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hEh-i1-qgN">
+                                <rect key="frame" x="112" y="33" width="15" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="-" id="0lb-ap-61k">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="pEy-MQ-6Es" firstAttribute="leading" secondItem="rTN-Of-3kV" secondAttribute="trailing" constant="7" id="6vI-c6-70z"/>
+                            <constraint firstItem="gIF-7b-GPx" firstAttribute="leading" secondItem="rTN-Of-3kV" secondAttribute="leading" id="Ck2-Zc-NgR"/>
+                            <constraint firstItem="pEy-MQ-6Es" firstAttribute="top" secondItem="rTN-Of-3kV" secondAttribute="top" id="D7e-J5-tkE"/>
+                            <constraint firstItem="hEh-i1-qgN" firstAttribute="leading" secondItem="pEy-MQ-6Es" secondAttribute="trailing" constant="7" id="EAs-qh-rCq"/>
+                            <constraint firstAttribute="bottom" secondItem="gIF-7b-GPx" secondAttribute="bottom" constant="15" id="Q02-PL-IoT"/>
+                            <constraint firstItem="bOc-43-zPV" firstAttribute="bottom" secondItem="gIF-7b-GPx" secondAttribute="bottom" id="Rmo-eF-CGi"/>
+                            <constraint firstAttribute="trailing" secondItem="bOc-43-zPV" secondAttribute="trailing" constant="20" symbolic="YES" id="Ucp-Gt-GCj"/>
+                            <constraint firstItem="rTN-Of-3kV" firstAttribute="leading" secondItem="znM-V6-Abt" secondAttribute="leading" constant="20" id="dOq-nc-zqK"/>
+                            <constraint firstItem="pEy-MQ-6Es" firstAttribute="top" secondItem="rTN-Of-3kV" secondAttribute="top" id="iNx-Cs-KRb"/>
+                            <constraint firstItem="rTN-Of-3kV" firstAttribute="top" secondItem="znM-V6-Abt" secondAttribute="top" constant="12" id="j2R-6k-lbl"/>
+                            <constraint firstItem="hEh-i1-qgN" firstAttribute="bottom" secondItem="pEy-MQ-6Es" secondAttribute="bottom" id="n1j-oV-w8g"/>
+                            <constraint firstItem="gIF-7b-GPx" firstAttribute="top" secondItem="rTN-Of-3kV" secondAttribute="bottom" constant="2" id="s0p-M0-lZl"/>
+                            <constraint firstItem="pEy-MQ-6Es" firstAttribute="bottom" secondItem="rTN-Of-3kV" secondAttribute="bottom" id="yXO-46-RJC"/>
+                        </constraints>
+                    </view>
+                </box>
+            </subviews>
+            <point key="canvasLocation" x="-171" y="-9"/>
+        </customView>
+        <collectionViewItem title="siteItemIdentifier" nibName="SiteItem" id="mf3-wV-eEn" customClass="SiteItem" customModule="Glances" customModuleProvider="target">
+            <connections>
+                <outlet property="name" destination="rTN-Of-3kV" id="dKE-ri-P1T"/>
+                <outlet property="preview" destination="hEh-i1-qgN" id="kBx-Rk-7iR"/>
+                <outlet property="url" destination="gIF-7b-GPx" id="qnS-Mn-EaY"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="k33-pL-b1J"/>
+                <outlet property="xpath" destination="bOc-43-zPV" id="iXH-Zz-qhD"/>
+            </connections>
+        </collectionViewItem>
+    </objects>
+</document>
